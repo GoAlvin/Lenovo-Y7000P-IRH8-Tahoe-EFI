@@ -2,9 +2,9 @@
 
 联想拯救者 **Y7000P IRH8 / 82YA，i7-13700H + RTX 4060 Laptop** 的 OpenCore EFI 与适配记录。
 
-**当前为实验性快照，存在重启后卡在启动画面的未解决问题。** 本机曾正常进入 macOS，用户确认声音及系统原生 Wi-Fi 已恢复；这不等于已完成长期稳定性验证。蓝牙、触控板、睡眠唤醒仍需继续排查。
+**当前为实验性快照，存在概率性卡码的情况。** 本机已正常进入 macOS，用户确认声音及系统原生 Wi-Fi 已恢复，并已开启 Metal 4 加速；长期稳定性仍待验证。蓝牙、触控板、睡眠唤醒仍需继续排查。
 
-公开版本已经移除真实序列号、MLB、UUID、ROM、原始诊断和机器绑定资料。**仓库只提供 `config.sample.plist`；使用前必须生成自己的 `config.plist`。**
+公开配置模板已经清空序列号、MLB、UUID 和 ROM，未包含原始诊断和私有机器绑定资料；展示截图按机主要求保留原图。**仓库只提供 `config.sample.plist`；使用前必须生成自己的 `config.plist`。**
 
 ## 硬件与版本
 
@@ -22,22 +22,33 @@
 | 硬盘 | UMIS 1 TB + Samsung PM981 2 TB；macOS 位于 PM981 的 APFS 分区 |
 | OpenCore | 1.0.9 DEBUG，基础 EFI 来自 1401 Windows 2.8.1 |
 | 系统实测记录 | macOS 26.7.2 / 25G332，Darwin 25.6.0，以本机诊断输出为准 |
-| SMBIOS | `MacBookPro16,2`；身份字段未公开 |
+| SMBIOS | `MacBookPro16,2`；配置模板中的身份字段已清空 |
+
+### 设备配置截图
+
+![Legion Zone 中的 Lenovo Legion Y7000P IRH8 设备配置](assets/device-configuration.png)
 
 ## 当前功能状态
 
 | 功能 | 状态与验证范围 |
 | --- | --- |
-| 进入桌面 | 曾成功；随后普通重启仍复现启动停滞，未解决 |
+| 进入桌面 | 已成功进入；存在概率性卡码的情况 |
 | 内置声音 | 用户报告恢复；日志已识别 Realtek ALC257 输出及输入；各接口未逐项验证 |
 | 系统原生 Wi-Fi | 用户确认开关及联网恢复；使用 Tahoe AirportItlwm alpha 分支 |
 | NVIDIA 显示 | 驱动 2.8.1 曾加载并进入桌面；重启稳定性仍在排查 |
-| Metal、视频编解码、性能 | 未完成专项验证 |
+| Metal 4 加速 | 用户确认已开启；系统信息显示 RTX 4060 Laptop GPU 支持 Metal 4，见下图 |
+| 视频编解码、性能 | 未完成专项验证 |
 | 蓝牙 | 固件与修补驱动已配置；目前缺少耳机/鼠标配对验证及完整控制器诊断 |
 | 触控板 | 当前禁用 I2C 驱动；重新启用实验曾伴随启动停滞，未完成定位 |
 | USB | 使用 USBToolBox + UTBDefault；不是完整的本机端口定制表 |
 | PM981 | 配置 NVMeFix 及针对性电源属性；不能据此视为完全兼容或长期稳定 |
 | 电池、亮度、休眠唤醒 | 有相关组件，但未完成逐项验证 |
+
+### macOS 与 Metal 4 截图
+
+![macOS Tahoe 系统信息：RTX 4060 Laptop GPU、Metal 4 与 2560×1600 165 Hz 内屏](assets/macos-metal4.jpg)
+
+截图展示本机的 macOS Tahoe 26.7.2、RTX 4060 Laptop GPU 8 GB、Metal 4 支持及 2560×1600 / 165 Hz 内屏信息。用户已确认开启 Metal 4 加速；性能和视频编解码仍需专项测试。“关于本机”显示的处理器名称受仿冒配置影响，实际 CPU 为上表中的 i7-13700H。
 
 ## 主要适配
 
@@ -80,6 +91,7 @@
 
 ```text
 EFI/                         OpenCore、当前启用组件、ACPI 与脱敏配置模板
+assets/                      设备配置与 macOS / Metal 4 原图
 docs/                        状态、ACPI 和排障说明
 scripts/                     本地生成配置、静态检查、macOS 只读诊断
 third_party/                 组件来源、对应源码与收集到的许可证
