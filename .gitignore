@@ -1,0 +1,21 @@
+# Private machine identity: publish only config.sample.plist.
+EFI/OC/config.plist
+**/config.plist.before-*
+**/config-before-*
+**/system-profile*.json
+.private/
+private/
+backups/
+diagnostics/
+**/*diagnostics-*/
+*.zip
+*.dmg
+*.log
+*.ips
+*.dmp
+Report.json
+.DS_Store
+._*
+__MACOSX/
+__pycache__/
+*.pyc

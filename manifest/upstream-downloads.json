@@ -1,0 +1,87 @@
+[
+  {
+    "product_name": "AMFIPass",
+    "url": "https://github.com/dortania/OpenCore-Legacy-Patcher/raw/main/payloads/Kexts/Acidanthera/AMFIPass-v1.4.1-RELEASE.zip",
+    "sha256": null
+  },
+  {
+    "product_name": "BrcmPatchRAM",
+    "url": "https://github.com/dortania/build-repo/releases/download/BrcmPatchRAM-6538902/BrcmPatchRAM-2.7.3-RELEASE.zip",
+    "sha256": "71a4bdf9d0804f16f4f9a35f5b67288cd680eda44e4347cd60640f2e422299ea"
+  },
+  {
+    "product_name": "BrightnessKeys",
+    "url": "https://github.com/dortania/build-repo/releases/download/BrightnessKeys-37bdf47/BrightnessKeys-1.0.4-RELEASE.zip",
+    "sha256": "8fc2be5041801cc4fbf481153034b975ed18e02af312d6316531ee859f764126"
+  },
+  {
+    "product_name": "CpuTopologyRebuild",
+    "url": "https://github.com/b00t0x/CpuTopologyRebuild/releases/download/2.0.2/CpuTopologyRebuild-2.0.2-RELEASE.zip",
+    "sha256": null
+  },
+  {
+    "product_name": "IntelBluetoothFirmware",
+    "url": "https://github.com/dortania/build-repo/releases/download/IntelBluetoothFirmware-a414375/IntelBluetoothFirmware-2.5.0-RELEASE.zip",
+    "sha256": "53a81964a2f7c2a20c885b8f327b4d427174f322c0094462df33eac8ecdc7ba1"
+  },
+  {
+    "product_name": "Lilu",
+    "url": "https://github.com/dortania/build-repo/releases/download/Lilu-0249c3a/Lilu-1.7.3-RELEASE.zip",
+    "sha256": "9a453e5d47b05b2bebe301095e0872ade0e622dadd9ad5e5c01a2fce17904049"
+  },
+  {
+    "product_name": "NVMeFix",
+    "url": "https://github.com/dortania/build-repo/releases/download/NVMeFix-4862220/NVMeFix-1.1.4-RELEASE.zip",
+    "sha256": "8c0c9b83f6f36db59a963ab91205a5d26aa9b368736b3b885ee8fa9ad90f6e9e"
+  },
+  {
+    "product_name": "OpenCorePkg",
+    "url": "https://github.com/dortania/build-repo/releases/download/OpenCorePkg-ebea824/OpenCore-1.0.9-DEBUG.zip",
+    "sha256": "9859b77943b5e17b9667525a464063d703323431551910321adc9e02311a06bd"
+  },
+  {
+    "product_name": "RealtekRTL8111",
+    "url": "https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/2.4.2/RealtekRTL8111-V2.4.2.zip",
+    "sha256": null
+  },
+  {
+    "product_name": "RestrictEvents",
+    "url": "https://github.com/dortania/build-repo/releases/download/RestrictEvents-9265e78/RestrictEvents-1.1.7-RELEASE.zip",
+    "sha256": "e5a8c15adeba9251be2709899214fe7fd847f6d38fca6c09adb65e9b2af64f0a"
+  },
+  {
+    "product_name": "USBToolBox",
+    "url": "https://github.com/USBToolBox/kext/releases/download/1.2.0/USBToolBox-1.2.0-RELEASE.zip",
+    "sha256": "c315a3a5acfd496dd97d0d19b4fbd1d487103d2fd541c5651583d4c9cebcfe07"
+  },
+  {
+    "product_name": "VirtualSMC",
+    "url": "https://github.com/dortania/build-repo/releases/download/VirtualSMC-b5c62c2/VirtualSMC-1.3.9-RELEASE.zip",
+    "sha256": "0d020ad354fc72f9143b0cc4d57335e9f3a61c9c3b1f8ccf7b332223d8a541c5"
+  },
+  {
+    "product_name": "VoodooPS2",
+    "url": "https://github.com/dortania/build-repo/releases/download/VoodooPS2-7eab4a3/VoodooPS2Controller-2.3.8-RELEASE.zip",
+    "sha256": "4008968674f0fae549c656d9f55af3e689e0b335cb33b4484bf94ab237357016"
+  },
+  {
+    "product_name": "WhateverGreen",
+    "url": "https://github.com/dortania/build-repo/releases/download/WhateverGreen-093e76f/WhateverGreen-1.7.2-RELEASE.zip",
+    "sha256": "59a1fe3d64b2e57925c806985c88bb69ce0a6bbeea5980ca11551b0e7ddf55b9"
+  },
+  {
+    "product_name": "XHCI-unsupported",
+    "url": "https://github.com/daliansky/OS-X-USB-Inject-All/releases/download/v0.8.0/XHCI-unsupported.kext.zip",
+    "sha256": null
+  },
+  {
+    "product_name": "YogaSMC",
+    "url": "https://github.com/zhen-zen/YogaSMC/releases/download/1.5.3/YogaSMC-Release.zip",
+    "sha256": null
+  },
+  {
+    "product_name": "AirportItlwm-Tahoe",
+    "url": "https://github.com/laobamac/itlwm/releases/download/v2.4.0-alpha/AirportItlwm-Tahoe-v2.4.0-RELEASE-alpha-7204c69.zip",
+    "sha256": "a5d098e6752592435c021aa6e8d08c64ee6aab9f2786660a6c72d7af1218fcf9"
+  }
+]

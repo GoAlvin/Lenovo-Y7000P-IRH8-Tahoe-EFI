@@ -1,0 +1,41 @@
+{
+  "recorded_date": "2026-11-09",
+  "status": "experimental; reboot hang unresolved",
+  "source_snapshot": "last user-confirmed audio and native Wi-Fi EFI; later reboot regression still unresolved",
+  "private_config_and_machine_profiles_published": false,
+  "identity_fields_blank": [
+    "SystemSerialNumber",
+    "MLB",
+    "SystemUUID",
+    "ROM"
+  ],
+  "inactive_kernel_entries_removed": [
+    "VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext",
+    "VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext",
+    "VoodooI2C.kext",
+    "VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext",
+    "VoodooI2CHID.kext",
+    "itlwm.kext"
+  ],
+  "private_backup_files_excluded": true,
+  "enabled_configuration_preserved": true,
+  "private_config_validation": {
+    "ok": true,
+    "ocvalidate": {
+      "ok": true,
+      "issues": 0,
+      "text": "NOTE: This version of ocvalidate is only compatible with OpenCore version 1.0.9!\n\n\nCompleted validating config.plist in 1 ms. No issues found."
+    },
+    "invariants": [],
+    "error": ""
+  },
+  "public_template_ocvalidate": {
+    "ok": true,
+    "issues": 0,
+    "text": "NOTE: This version of ocvalidate is only compatible with OpenCore version 1.0.9!\n\n\nCompleted validating config.sample.plist in 1 ms. No issues found."
+  },
+  "public_efi_files": 136,
+  "private_identifier_scan": "passed",
+  "runtime_boot_of_public_template": "not applicable until personal identity is configured; not tested",
+  "full_stability_verified": false
+}

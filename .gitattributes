@@ -1,0 +1,9 @@
+# Preserve EFI checksums independently of the client's global line-ending setting.
+* -text
+*.md text eol=lf
+*.py text eol=lf
+*.command text eol=lf
+*.efi binary
+*.aml binary
+*.icns binary
+*.mp3 binary
